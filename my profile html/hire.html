@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hire me.fenix</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/173885c2f3.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="container-background">
+    <header class="header-content">
+        <div class="fename">
+            <h1 class="h1">Fenix <span class="fename">T.S</span></h1>
+        </div>
+
+        <div class="icons-fontawesome">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <div class="nav-container">
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about me.html">About_me</a></li>
+                <li><a href="qualification.html">Qualification</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="project.html">projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <div class="hire-container">
+        <div class="hire-content">
+            <p>
+            <div class="hire-para">
+                <h3>Hello, I'm Fenix T.S</h3>
+
+                <div style="font-size: 19px;">I'm a passionate Front-End Developer with a proven track record of
+                    delivering skills such as
+                    <b>HTML,CSS,Javascript,React.</b>
+                    With '0'years of experience, I'm dedicated to turning ideas into exceptional results.
+                </div>
+                <div style="font-weight:bold; font-size: 30px;font-family: 'Caprasimo', cursive;">
+                    Hire me today and let's skyrocket your business together!
+                    Just fill out the form bellow.
+                </div>
+                <div>
+                    Fill out the form bellow and I'll get in touch with you as soon as I can.
+                </div>
+            </div>
+            </p>
+        </div>
+        <div class="form-view-resume">
+            <form class="hire-form" action="#" method="post" id="Hire form">
+                <div class="hire-input">
+                    <label>First name</label>
+                    <input type="text" id="First name">
+                    <label>last name</label>
+                    <input type="text" id="Last name">
+                    <label>Company name</label>
+                    <input type="text" id="Company name">
+                    <label>Email</label>
+                    <input type="Email" id="Email">
+                    <label>Contact number</label>
+                    <input type="number" id="Contact number">
+
+                    <br>
+                    <address style="display: flex; flex-direction: column; width: 50%;">
+                        <label><b>company address</b></label>
+                        <input type="text" placeholder="Street" id="Street">
+                        <input type="text" placeholder="City" id="City">
+                        <input type="text" placeholder="District" id="District">
+                        <input type="text" placeholder="State" id="State">
+                        <input type="number" placeholder="Pincode" id="Pincode">
+
+                    </address>
+                    <br>
+                    <div class="job-details">
+                        <label><u><b>Job Details</b></u></label>
+                        <br><br>
+                        <label for="job title"> Job title : </label>
+                        <input type="text" id="Job title">
+                        <br>
+                        <label for="job roll">Job roll : </label>
+                        <input type="text" id="job roll">
+                        <br>
+                        <label for="department">Department : </label>
+                        <input type="text" id="Department" placeholder=" Department / Team Name">
+                        <br>
+                        <label for="company culture">Company culture : </label>
+                        <input type="text" id="Company culture" placeholder=" mission / industry reputation">
+                        <br>
+
+                        <label for="Job type">Job type :</label>
+                        <select id="Job type" name="Job">
+                            <option value="Full Time">Full Time</option>
+                            <option value="Part Time">Part Time</option>
+                            <option value="Contract">Contract</option>
+                        </select>
+                        <br>
+                        <!-- <label>Location</label><br> -->
+                        <label for="yes-radio">Office Location</label>
+                        <input type="radio" id="yes-radio" name="location" value="Work in office">
+                        <label for="no-radio">Remote</label>
+                        <input type="radio" id="no-radio" name="location" value="Work from Home/Remote">
+
+                        <br>
+                        <label for="qualification">Select Qualification :</label>
+                        <select id="Qualification" name="qualification">
+                            <option value="">Select an option</option>
+                            <option value="BE">BE</option>
+                            <option value="BTECH">BTECH</option>
+                            <option value="ME">ME</option>
+                            <option value="BBA">BBA</option>
+                            <option value="MBA">MBA</option>
+                            <option value="art and science">Art and science</option>
+                            <option value="any degree">Any Degree</option>
+                            <option value="others">others</option>
+                        </select>
+                        <br>
+                        <label for="">Skills needed :</label>
+                        <input type="text" id="Skills needed">
+                        <br>
+                        <label for="">Experience :</label>
+                        <input type="text" id="Experience">
+                    </div>
+                </div>
+
+                <button type="submit" class="submit">submit</button>
+            </form>
+            <div class="view-resume">
+                <div class="pic-resume-container">
+                    <a href="Documents/FENIX Resume.pdf" target="_blank">
+                        <img src="Images/FENIX Resume_page-0001.jpg" alt="Resume" class="pic-resume">
+                    </a>
+                </div>
+                <div class="hire-cv-width">
+                    <a href="Documents/FENIX Resume.pdf" download>
+                        <button id="downloadButton" type="button" class="hire-cv-downlode">Download cv</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="Hire.js"></script>
+    <script src="icon.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,980 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Lisu+Bosa:ital,wght@1,700&family=Poppins:wght@300;400;500;700&family=Tektur:wght@400;500&display=swap');
+  
+*{
+    padding:0%;
+    margin:0%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+::selection{background-color:green;}
+/* variables declaration */
+:root{
+    --primary-color:purple;
+    --primary-color-light:#800080b9;
+    --secondary-color:#a3cc27;
+
+}
+.fename {
+    font-family: 'Lisu Bosa', serif;
+    
+}
+.imfen{
+    display:flex;
+    margin-top: 1%;
+}
+.h1{
+    color:var(--secondary-color);
+    font-size: 400%;
+    font-family: 'Lisu Bosa', serif;
+    margin-left:15px ;
+    margin-top: 10px;
+    position: absolute;
+    width: 105%;
+    
+} 
+span.fename{
+    font-size: 100%;
+    color:#34aeeb;
+   
+}
+.hero{
+    height: 98vh;
+    width: 100%;
+    background-image:url('Images/my\ edited\ final.png') ;
+    background-size:cover;
+    background-position: center;
+}    
+
+.header-content{
+    background-color: black;
+    height: 10%;
+    position: relative;
+
+}
+.nav-container{
+    background-color:var(--primary-color);
+    position: relative;
+    top: 50px;
+    height: 45%;
+    width: 100%;
+}
+.nav-links{
+   
+    display:flex;
+    float: right;
+    list-style-type: none;
+    padding: 8px;
+    
+    margin-right: 20px;
+    padding-top: 8px;
+    
+   
+} 
+a {
+    color:white;
+    text-decoration:none;
+    font-size:120%;
+    padding: 0 30px; 
+    
+       
+    
+}    
+a:hover{
+    color: var(--secondary-color);
+}
+.icons-fontawesome{
+    color: #e1e2e4;
+    transition: transform 0.2s ease;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    font-size:180%;
+    position: relative;
+    top: 25px;
+    right: 40px;
+    
+}
+.burger-icon {
+    color: rgba(255, 255, 255, 0.747);
+    font-size: 25px;
+    display:none ; 
+  }
+ 
+#button1{
+    background-color: red;
+    color:white;
+    border-radius: 20px;
+    padding: 3px 6px;
+    border:white 2px groove;
+    font-size:20px;
+    transition: transform 0.2s ease;
+    position:absolute;
+    top:25px;
+    right:35px
+    
+}
+#button1:hover{
+    transform:scale(1.1) 
+}
+.content{
+    margin:9% 8% ;
+    color: #f5f5ed;
+    line-height:200%;
+}
+ h3{
+        font-size:240%;
+        font-family:"";
+        margin-bottom: 1%;
+}
+h2{
+    color: var(--secondary-color);
+    font-size:300% ;
+    /* font-style: oblique; */
+    margin-bottom: 1%;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+h4{
+    font-size:250%;
+    font-family:monospace;   
+}
+.login{
+    margin-top:3%;
+    width: 390px;
+    height: 40px;
+    display:flex;
+    
+}
+.login input:first-child
+{
+
+    width: 600px;
+    height: 40px; 
+    padding:20px 16px; 
+    border:3px solid var(--primary-color);
+    border-radius:30rem;
+    border-width: 4px;
+    font-size:20px;
+    letter-spacing:5px;
+}
+::placeholder{
+   color:var(--primary-color-light); 
+}
+.login input:last-child
+{    
+    height: 38px;
+    width: 170px;
+    border-radius : 30em;
+    background-color:var(--primary-color);
+    color: white;
+    font-size:20px;
+    border-color: var(--primary-color-light);
+    border-width:1px;
+    position:relative;/* or relative  */
+    margin-left:-117.5px ;
+    top:5px;
+    left: 1.5px;
+    transition: transform 0.2s ease;
+  
+    
+}
+.login input:last-child:hover{
+    
+    transform:scale(1.04)
+    
+     
+}
+
+/* Media query for screens smaller than 600px */
+ @media only screen and (max-width: 925px) {
+
+
+      .nav-links{
+        flex-direction: column;
+        background-color: var(--primary-color-light);
+        position: absolute;
+        top: 35px;
+        right: -20px;
+        height: 28vh;
+        width: 0px;
+        gap:17px;
+        padding: 1rem 0;
+        z-index:1;
+        transition:300ms ;
+        
+      }
+      .nav-show{
+        width : 180px;
+        
+      }
+
+    .burger-icon{
+        display:block;
+        position: relative;
+        top: 6px;
+        left: 93%;
+        cursor: pointer;
+    }
+    .content{
+        position: relative;
+        top: 20%;}
+    .login{
+        position: relative;
+        top:15px; 
+ }
+
+ }
+
+/* ---------------------------------------------------- */
+
+/* about me.html */
+.background{
+    background-color: var(--primary-color-light);
+    width: 100%;
+    height:835px;
+}
+.about-profile{
+    width: 240px;
+    border-radius: 50%;
+    margin-left: 35px;
+    margin-top:50px ;
+    border-style:groove;
+    box-shadow:-30px -6px 30px rgba(0, 0, 0, 0.4);
+}
+.design{
+    background-color:rgba(220, 147, 13, 0.915);
+    width: 218px;
+    border-radius: 20px; 
+    }
+.about-container{
+    display: flex; 
+    padding: 50px;
+    gap: 96px;  
+}
+.about-container p{
+   line-height: 31px;
+   letter-spacing: .5px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 110%;
+   color:rgb(185, 179, 179);
+}  
+.about-content{
+    background-image: linear-gradient(to top,#833083b9, #b143b1b9);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 30px;
+}
+.contact-me{
+    background-color: rgb(82, 71, 225);
+    height: 40px;
+    width: 150px;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px; 
+    margin-top: 30px;
+  
+     
+        
+} 
+.contact-me:hover{
+    background-color: rgba(51, 39, 226, 0.876);
+    color:white;
+    cursor: pointer;
+}
+.about-resume-cointainer{
+    /* background-color: red; */
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    position: relative;
+    top: 200px;
+    align-items: center;
+    
+}
+.about-pic-resume:hover{
+    border:groove; 
+    box-shadow:-11px -10px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.about-pic-resume{
+    width: 100%;
+    
+}
+.cv-download{
+    background-color:#44bd32;
+    border: none;
+    
+    color: white;
+    font-size:150%;
+    padding: 20px;
+    letter-spacing: 5px;
+    border-radius: 18px;
+}
+.cv-download:hover{
+    background-color:#45bd32d4;
+    border:groove; 
+    box-shadow:-11px -10px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .about-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+    }
+    .about-resume-cointainer{
+        flex-direction: row;
+        width: 90%;
+        top: 0px;
+    }
+    .design{
+        width: 100%;
+        height: 260px;
+    }
+    .about-pic-resume{
+        width: 50%;
+        
+    }
+  
+    
+
+.cv-container{
+    width: 50%;
+    
+}
+    .resume-container{
+   
+       width: 100%;
+    }
+    .cv-download{
+        background-color:#44bd32;
+        border: none;
+        width: 100%;
+        color: white;
+        font-size:20px;
+        padding: 10px;
+        letter-spacing: 4px;
+        border-radius: 10px;
+    }
+
+}
+
+
+@media only screen and (max-width: 665px){
+ 
+    .about-pic-resume{
+        width:100%;
+    
+}
+.cv-container{
+    width: 30%;
+    
+}
+    .resume-container{
+   
+       width: 100%;
+    }
+    .cv-download{
+        width: 100px;
+        font-size:60%;
+        padding: 10px;
+        letter-spacing: 3px;
+        border-radius: 10px;
+        position: relative;
+       right: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 465px){
+ 
+    .about-pic-resume{
+        width: 100%;
+    
+}}
+
+
+/* ---------------------------------------- */
+/* Qualification.html */
+.container-background{
+    background-color: var(--primary-color-light);
+    width: 100%;
+    height:835px;
+}
+
+
+.container{
+    position: relative;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,32em);
+    justify-content:space-evenly;
+    top: 150px;
+    gap: 60px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+
+}
+ p{
+    padding-top: 20px;
+}
+.container h3{
+    line-height: 45px;
+}
+.ten{
+    background-color:#34aeeb;
+    padding: 50px;
+    border-radius: 20px;
+    border:groove 5px;
+    box-shadow:-11px -10px 20px rgba(0, 0, 0, 0.4);
+ 
+
+}
+.twelve{
+    background-color:#e1b12c;
+    padding: 50px;
+    border-radius: 20px;
+    border:groove 5px;
+    box-shadow:-11px -10px 20px rgba(0, 0, 0, 0.4);
+
+}
+.BE{
+    background-color:#ff793f;
+    padding: 50px;
+    border-radius: 20px;
+    border:groove 5px;
+    box-shadow:-11px -10px 20px rgba(0, 0, 0, 0.4);
+
+}
+#view-marksheet{
+    border: none;
+    background-color: #ccddfb;
+    color:#0652DD ;
+    height: 50px;
+    width: 170px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    border: #0652DD 2px solid;
+    position: relative;
+    top: 30px;
+    
+    
+}
+#view-marksheet:hover{
+    color:  white;
+    background-color: #0652DD;
+    
+
+}
+@media only screen and (max-width: 665px){
+    
+    .ten,.twelve,.BE{
+        width: 70%;
+        margin-left: 80px;
+      
+    }
+      
+    
+}
+
+/* ___________________________ */
+
+/* skills.html */
+
+.container-skills{
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,10em);
+    gap: 150px;
+    padding: 50px;
+}
+.html{
+    background-color:white;
+    height: 300px;
+    width: 260px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+}
+.css{
+    background-color:white;
+    height: 300px;
+    width: 260px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    
+}
+
+.javascript{
+    background-color:white;
+    height: 300px;
+    width: 260px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+   
+
+}
+
+.react{
+    background-color:white;
+    height: 300px;
+    width: 260px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+
+
+}
+.photoshop{
+    background-color:white;
+    height: 300px;
+    width: 260px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+
+}
+.filmora{
+    background-color:white;
+    height: 300px;
+    width: 260px;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+.skills-head{
+    font-size: 22px;
+    position: relative;
+    top: 20px;
+}
+
+.html-img{
+    height:50px;
+    margin: 10px 20px;
+}
+.css-img{
+    margin: 10px 20px;
+    height:60px
+    
+}
+.javascript-img{
+    margin: 10px 20px;
+    height:50px
+}
+.react-img{
+    margin: 10px 20px;
+    height:50px
+}
+.photoshop-img{
+    margin: 20px 20px;
+    height:48px
+}
+.filmora-img{
+    margin: 10px 20px;
+    height:45px
+}
+.html-percentage{
+    height: 100px;
+    position: relative;
+    left:-150px;
+    top: 170px;
+   
+}
+.css-percentage{
+    height: 100px;
+    position: relative;
+    left:-115px;
+    top: 173px;
+  
+}
+.javascript-percentage{
+    height: 100px;
+    position: relative;
+    left:-190px;
+    top: 170px;
+    
+}
+.react-percentage{
+    height: 100px;
+    position: relative;
+    left:-150px;
+    top: 173px;
+}
+.photoshop-percentage{
+    height: 100px;
+    position: relative;
+    left:-200px;
+    top: 173px;
+}
+.filmora-percentage{
+    height: 100px;
+    position: relative;
+    left:3px;
+    top: 100px;
+}
+.cv-btn{
+    position: relative;
+    top: 150px;
+}
+ 
+.hire-me{
+    border-style: none;
+    border: 2px solid #1e3799;
+    height: 40px;
+    width: 150px;
+    color:#1e3799 ;
+    background-color: #bec4c4;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-left:5%;
+    margin-top:1.5%;
+}
+.hire-me:hover{
+    color:white;
+    background-color:#1e3799 ;
+}
+.skill-con-btn{
+  
+    border-style: none;
+    border: 2px solid #1e3799;
+    height: 40px;
+    width: 150px;
+    color:#1e3799 ;
+    background-color:#bec4c4 ;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-left:5%;
+    margin-top:1.5%;
+}
+.skill-con-btn:hover{
+    background-color: rgba(51, 39, 226, 0.876);
+    color:white;
+    cursor: pointer;
+}
+.con-hire-btn{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,10em);
+    gap: 2%;
+    padding: 40px;
+}
+/*___________________________________________ */
+/* project */
+
+.project-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 22px;
+    word-spacing: 3px;
+    letter-spacing: .5px;
+    border-collapse: collapse;
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+    background-color:#34aeeb;
+    position: relative;
+    top: 80px;
+    left: 125px;
+    width: 88%;
+    padding: 50px; 
+}
+.project-table th,.project-table td{
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.project-table td{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.project-table th{
+    background-color: white;
+    
+}
+.project-table tr:nth-child(odd)
+{
+    background-color:#192a56 ;
+   
+  
+}
+.project-table tr:nth-child(even)
+{
+    background-color:#273c75 ;
+}
+.project-table tr:not(:first-child):hover{
+    transform:scale(1.01);
+    filter: drop-shadow(10px 10px 10px);
+}
+.project-table tr{
+    transition:transform 300ms;
+}
+@media only screen and (max-width: 1219px){
+    .project-table{
+        font-size: 85%;
+        
+    } 
+    .project-table th,.project-table td{
+        width: 10px;
+        
+}
+
+}
+
+/* ___________________________________ */
+/* contact me */
+.user-input input,textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius:10px;
+    border: none;
+    font-size:15px ;
+
+}
+.user-input input:focus,textarea:focus{
+    outline-color: var(--primary-color);
+   
+}
+.user-input input:hover,textarea:hover{
+    box-shadow: inset 0px 0px 98px 9px rgba(0,0,0,0.1);
+
+}
+main{
+    padding: 5%;
+    padding-top: 50px;
+}
+.submit{
+    background-color: #44bd32;
+    color: white;
+    width: 80px;
+    height: 30px;
+    font-size: larger;
+    border-radius: 10px;
+    border: none;
+    margin-top: 15px;
+}
+.submit:hover{
+    background-color: white;
+    color: #44bd32;
+    border:#44bd32 3px solid;
+}
+.form{
+    margin-top: 40px;
+}
+.user-input{
+    margin-top: 50px;
+}
+.form h3{
+    display: inline-block;
+}
+.form h3::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 70%;
+    background-color: #e1b12c;
+
+}
+/* _________________________________________________________________ */
+/* Hire me */
+.hire-container{
+    /* display: flex;
+    flex-direction: column;
+    gap: 20px; */
+    position: relative;
+    top: 35px;
+
+}
+.hire-content{
+    background-image: linear-gradient(to top, #e1b12c, #e5e480);
+
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-bottom: black 10px solid;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+
+}
+.hire-para{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+.hire-form{
+    background-image: linear-gradient(to top,#ccddfb, #96aacc);
+    width: 70%;
+    padding: 50px;
+    margin: 20px;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    border-radius: 30px;
+    font-size: large;
+    border: black 2px solid;
+    
+}
+.hire-input{
+    display: flex;
+    flex-direction: column;
+}
+.form-view-resume{
+    display: flex;
+}
+.view-resume{
+    background-image: linear-gradient(to top,#ccddfb, #96aacc);
+    width: 30%;
+    border-radius:30px ;
+    margin: 20px;
+    margin-bottom: 20px;
+    border: black 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10em; */
+}
+.pic-resume-container{
+    /* background-color: white; */
+    margin: 80px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic-resume-container:hover{
+    border:groove; 
+    box-shadow:-11px -10px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.pic-resume{
+    width: 100%;
+    
+}
+.hire-cv-width{
+    /* background-color: red; */
+    width:60%;
+    height: 90%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hire-cv-downlode{
+    background-color:#44bd32;
+    border: none;
+    width: 100%;
+    color: white;
+    font-size:150%;
+    padding: 20px;
+    letter-spacing: 5px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.hire-cv-downlode:hover{
+    background-color:#45bd32d4;
+    border:groove; 
+    box-shadow:-11px -10px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.form-view-resume input,select{
+   height: 25px;
+   margin-bottom: 10px;
+}
+.form-view-resume #yes-radio,#no-radio{
+    width: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 5px;
+}
+
+.form-view-resume input:hover{
+    background-color: #8aaae0;
+    border: 2px solid rgb(132, 132, 216);
+}
+@media only screen and (max-width: 1100px){
+    .form-view-resume{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .hire-form{
+        width: 90%;
+        margin: 50px;
+           
+    }
+    .view-resume{
+        width: 80%;
+        height: 30em;
+        flex-direction:row;
+        padding: 50px;
+        padding-left: 0px;
+       
+    }
+    .pic-resume-container{
+        margin-left: 50px;
+        width: 500px;
+        flex-direction: column;
+    }
+    .hire-cv-downlode{
+        width: 200px;
+    }
+    .pic-resume{
+        width: 240px;
+        
+    }
+}
+@media only screen and (max-width:774px){
+    .view-resume{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .pic-resume-container{
+        width: 100%;
+        align-items: center;
+        justify-content: center;  
+}
+.pic-resume{
+        width: 100%;
+        margin-left: 40px;
+        margin-top: -100px;  
+    }
+    .hire-cv-downlode{
+        width: 650%;
+    }
+    .hire-cv-width{
+        width: 100%;
+        position: relative;
+        left: 25px;
+    }
+}
+
+
+@media only screen and (max-width: 525px){
+    .hire-form, .view-resume{
+       
+    }
+ 
+}
